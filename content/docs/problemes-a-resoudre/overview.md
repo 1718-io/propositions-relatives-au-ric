@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-weight: 54
+weight: 24
 description: >
   Use hugo shortcodes to quickly compose your documentation pages.
 ---

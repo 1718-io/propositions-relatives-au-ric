@@ -1,6 +1,6 @@
 ---
-title: Getting started
-weight: 11
+title: "Troisième Conviction: Un évènement majeur de l'Histoire de France"
+weight: 33
 ---
 
 ## Prerequisites
