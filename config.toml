@@ -14,12 +14,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [[menu.main]]
     name = "La Proposition"
     weight = 2
-    url = "docs/"
+    url = "./docs/"
 
 [[menu.main]]
     name = "Les Objections"
     weight = 3
-    url = "/docs/problemes-a-resoudre/"
+    url = "./docs/problemes-a-resoudre/"
 
 [markup]
   [markup.goldmark]

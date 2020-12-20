@@ -9,7 +9,7 @@ title = "Une proposition de RIC : Origine et Pourquoi"
 
 Depuis plusieurs dizaines de mois, je m'intéresse particulièrement au [concept de RIC](#).
 
-Je suis ouvert à toute discussion de mes convictions qui sont miennes, et en rédigerai mes arguments dans [`cet article`](/docs/3convictions/). Cependant, cette rédaction n'a pas pour objet la discussion de ces 3 convictions qui sont aujourd'hui miennes.
+Je suis ouvert à toute discussion de mes convictions qui sont miennes, et en rédigerai mes arguments dans [`cet article`](./docs/3convictions/). Cependant, cette rédaction n'a pas pour objet la discussion de ces 3 convictions qui sont aujourd'hui miennes.
 
 
 ## De l'objet de ce travail
@@ -23,7 +23,7 @@ __Une partie recensant toutes difficultés, obstructions, et objections recensé
 __une rédaction de statuts, proposant une définition de Statuts concrète opérationnelle__, que chacun est invité à "essayer de défaire" : cette rédaction constitue une preuve de faisabilité.
 
 
- {{< button "docs/ric-interne/" "La rédaction des statuts proposés" >}} {{< button "docs/problemes-a-resoudre/" "Objections à l'idée" >}}
+ {{< button "./docs/ric-interne/" "La rédaction des statuts proposés" >}} {{< button "./docs/problemes-a-resoudre/" "Objections à l'idée" >}}
 
 
 
@@ -74,6 +74,6 @@ Hormis ces deux objections, d'autres objections peuvent se présenter, et si vou
 
 {{< /column >}}
 {{< column >}}
-![L'idée du RIC](/images/ric_accueil.png)
+![L'idée du RIC](./images/ric_accueil.png)
 {{< /column >}}
 {{< /block >}}
