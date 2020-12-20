@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://1718-io.github.io/propositions-relatives-au-ric/"
 title = "Quant Au RIC"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
