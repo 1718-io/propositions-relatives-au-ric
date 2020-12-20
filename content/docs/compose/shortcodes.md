@@ -1,19 +1,19 @@
 ---
 title: "Shortcodes"
-weight: 5
+weight: 55
 description: >
   Use hugo shortcodes to quickly compose site pages.
 ---
 
 Why shortcodes? While markdown is sufficient to produce simple pages, it's insufficient where complex page structures are needed. Thusly, whenever we need special styling, shortcodes compliment the shortcomings of markdown.
 
-This way, you can side step complex html and css boilerplate in your content files. 
+This way, you can side step complex html and css boilerplate in your content files.
 
 Sometimes, the shortcode will wrap content, sometimes it won't. When content is wrapped, a closing shortcode tag is needed. Please see the link I provided above and the markdown files for examples. You'll get the gist pretty quickly.
 
 I've setup the following shortcodes:
 
-### Block 
+### Block
 
 Takes positional modifiers
 
@@ -67,7 +67,7 @@ This adds a styled link (styled like a button). It takes two no-optional paramet
 
 You want to use darkmode images when darkmode is enabled on a device and a regular image on lightmode? It takes 3 positional parameter
 
-Store these images in the `static/images` directory. 
+Store these images in the `static/images` directory.
 
 ```sh
 ...
@@ -77,7 +77,7 @@ Store these images in the `static/images` directory.
 
 ### Gallery
 
-Include inline galleries within your articles. These galleries can contain `N` number of images. It takes 2 positional parameters. 
+Include inline galleries within your articles. These galleries can contain `N` number of images. It takes 2 positional parameters.
 
 The 1st parameter is required. It's a _comma-separated list_ (`,`) of your images' paths.
 

@@ -1,7 +1,7 @@
 +++
 title = "Search"
 description = ""
-weight = 8
+weight = 58
 +++
 
 Compose implements `fuse.js` to enable search functionality. At the time of this writing, search on these theme takes either of this forms:

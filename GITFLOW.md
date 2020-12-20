@@ -45,6 +45,13 @@ hugo serve --watch -b http://127.0.0.1:1313/
 export FEATURE_ALIAS="change-hugo-theme"
 export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}) : changing hugo theme to a more adpated theme"
 
+export FEATURE_ALIAS='premiere-redaction'
+# git flow feature start ${FEATURE_ALIAS} && git push -u origin --all
+# git checkout "feature/${FEATURE_ALIAS}"
+export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): une première rédaction de la proposition, origine, pourquoi ce document"
+
+# git add --all && git commit -m "${COMMIT_MESSAGE}" && git push -u origin HEAD
+
 ```
 
 * run the hugo dev server, in the same folder, in antoher shell session, in parallel :

@@ -1,5 +1,5 @@
 baseURL = "https://example.com/"
-title = "Compose Docs"
+title = "Quant Au RIC"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
@@ -12,14 +12,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
-    name = "Docs"
+    name = "La Proposition"
     weight = 2
     url = "docs/"
 
 [[menu.main]]
-    name = "Example"
+    name = "Les Objections"
     weight = 3
-    url = "https://docs.neuralvibes.com"
+    url = "/docs/problemes-a-resoudre/"
 
 [markup]
   [markup.goldmark]
@@ -48,22 +48,22 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   repo = "https://github.com/onweru/compose"
 
-  time_format_blog = "Monday, January 02, 2006"
-  time_format_default = "January 2, 2006"
+  time_format_blog = "Monday, January 02, 2020"
+  time_format_default = "January 2, 2020"
   enableDarkMode = true # set to false to disable darkmode by default # user will still have the option to use dark mode
 
   # Site logo
   [params.logo]
-    lightMode = "compose.svg"
-    darkMode = "compose-light.svg"
+    lightMode = "ric_carl_blue_green.png"
+    darkMode = "ric_carl_blue_green.png"
 
   [params.source]
-    name = "GitHub"
+    name = "Ce travail, sur GitHub"
     icon = "github.svg"
-    url = "https://github.com/onweru/compose/"
+    url = "https://github.com/1718-io/propositions-relatives-au-ric"
 
   # optional
   # attribution. Feel free to delete this
   [params.author]
-    name = "Weru"
-    url = "https://neuralvibes.com/author/"
+    name = "Jean-Baptiste Lasselle"
+    url = "https://github.com/Jean-Baptiste-Lasselle"

@@ -1,7 +1,7 @@
 +++
 title = "Use forestry CMS"
 description = ""
-weight = 3
+weight = 53
 +++
 
 Do you prefer managing your site using a CMS? Or would you like to make it easier for someone (a non-techie, perhaps) in your team to make edits easily? If interested, follow along. Else, skip to the [next section](../overview/)
