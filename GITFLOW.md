@@ -27,7 +27,7 @@ ssh -Ti ~/.ssh.perso.backed/id_rsa git@github.com
   # rm -fr ~/propositions-relatives-au-ric
 # fi;
 
-git clone git@github.com:gravitee-lab/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric
+git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric
 cd ~/propositions-relatives-au-ric
 
 export FEATURE_ALIAS='ric-interne'

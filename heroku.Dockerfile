@@ -8,7 +8,8 @@
 
 ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-'3.12'}
 ARG GOLANG_VERSION=${GOLANG_VERSION:-'1.15.6'}
-FROM golang:${GOLANG_VERSION}-alpine${ALPINE_OCI_IMAGE_TAG} AS hugo_build
+ARG GOL_IMAGE_TAG="${GOLANG_VERSION}-alpine${ALPINE_OCI_IMAGE_TAG}"
+FROM golang:${GOL_IMAGE_TAG} AS hugo_build
 # FROM alpine:${ALPINE_OCI_IMAGE_TAG} AS hugo_build
 
 ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-'latest'}
@@ -19,7 +20,7 @@ ARG HUGO_BASE_URL=${HUGO_BASE_URL}
 
 RUN echo "GOLANG_VERSION=[${GOLANG_VERSION}] and HUGO_VERSION=[${HUGO_VERSION}] and HUGO_BASE_URL=[${HUGO_BASE_URL}]"
 USER root
-# [build-base] because the hugo installation requires gcc and [build-base] package contains the proper gcc 
+# [build-base] because the hugo installation requires gcc and [build-base] package contains the proper gcc
 RUN apk update && apk add curl git tree tar bash build-base
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # ---              CHECKING GOLANG VERSION                --- #
