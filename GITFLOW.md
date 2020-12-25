@@ -52,6 +52,13 @@ export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): une première rédaction de la p
 
 # git add --all && git commit -m "${COMMIT_MESSAGE}" && git push -u origin HEAD
 
+export FEATURE_ALIAS="heroku-pipeline"
+# git flow feature start ${FEATURE_ALIAS} && git push -u origin --all
+# git checkout "feature/${FEATURE_ALIAS}"
+export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): Docker-compose and Circle CI Pipeline definition with heroku deployment"
+
+# git add --all && git commit -m "${COMMIT_MESSAGE}" && git push -u origin HEAD
+
 ```
 
 * run the hugo dev server, in the same folder, in antoher shell session, in parallel :

@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  hugo_heroku:
+    # we need extended, and nodejs for sass!
+    image: quay.io/ric1718/une_proposition:dev
+    container_name: hugo_heroku
+    build:
+       context: .
+       dockerfile: heroku.Dockerfile
+       args:
+         - HTTPD_OCI_IMAGE_TAG: "2.4"
+         - GOLANG_VERSION: "1.15.6"
+         - HUGO_VERSION: "0.78.2"
+         - HUGO_BASE_URL: "https://ric-carl.herokuapp.com/"
+    # command: server
+    # volumes:
+      # - .:/src
+    ports:
+      # - 0.0.0.0:1313:1313
+      - 0.0.0.0:8080:80
