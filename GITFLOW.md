@@ -68,3 +68,16 @@ export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): Docker-compose and Circle CI Pip
 export PATH=$PATH:/usr/local/go/bin
 hugo serve --watch -b http://127.0.0.1:1313/
 ```
+
+
+```bash
+git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric
+cd ~/propositions-relatives-au-ric
+
+export FEATURE_ALIAS="heroku-pipeline"
+git checkout "feature/${FEATURE_ALIAS}"
+docker-compose build
+
+
+# docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric 
+```
