@@ -6,8 +6,8 @@
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 
-ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-''}
-ARG GOLANG_VERSION=${GOLANG_VERSION:-'1.15.6'}
+ARG ALPINE_OCI_IMAGE_TAG
+ARG GOLANG_VERSION=${GOLANG_VERSION:-1.15.6}
 # ARG GOL_IMAGE_TAG="${GOLANG_VERSION}-alpine${ALPINE_OCI_IMAGE_TAG}"
 FROM golang:$GOLANG_VERSION-alpine$ALPINE_OCI_IMAGE_TAG AS hugo_build
 # FROM alpine:${ALPINE_OCI_IMAGE_TAG} AS hugo_build
