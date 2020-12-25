@@ -55,7 +55,7 @@ RUN cd /pokus.io/hugo/src/ && hugo -b "${HUGO_BASE_URL}"
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 
-ARG HTTPD_OCI_IMAGE_TAG=${HTTPD_OCI_IMAGE_TAG:-'2.4'}
+ARG HTTPD_OCI_IMAGE_TAG=${HTTPD_OCI_IMAGE_TAG:-2.4}
 FROM httpd:${HTTPD_OCI_IMAGE_TAG} AS release
 
 ARG HTTPD_OCI_IMAGE_TAG=${HTTPD_OCI_IMAGE_TAG}
