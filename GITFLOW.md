@@ -77,6 +77,8 @@ cd ~/propositions-relatives-au-ric
 export FEATURE_ALIAS="heroku-pipeline"
 git checkout "feature/${FEATURE_ALIAS}"
 docker-compose build
+docker-compose up -d
+
 export DOCKER_BUILDKIT=0
 export COMPOSE_DOCKER_CLI_BUILD=0 && docker-compose build
 export DOCKER_BUILDKIT=1
@@ -95,5 +97,5 @@ export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_BASE_URL=https://ric-carl.
 # DOCKER_BUILDKIT=0 docker build -f heroku.Dockerfile . -t quay.io/ric1718/une_proposition:dev
 # DOCKER_BUILDKIT=0 docker build ${D_BUILD_ARGS} -f heroku.Dockerfile . -t quay.io/ric1718/une_proposition:dev
 
-# docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric
+# docker-compose down --rmi all && docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric
 ```

@@ -9,7 +9,7 @@
 ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG}
 ARG GOLANG_VERSION=${GOLANG_VERSION:-1.15.6}
 ARG HTTPD_OCI_IMAGE_TAG=${HTTPD_OCI_IMAGE_TAG}
-FROM golang:$GOLANG_VERSION-alpine$ALPINE_OCI_IMAGE_TAG AS hugo_build
+FROM golang:$GOLANG_VERSION-alpine$ALPINE_OCI_IMAGE_TAG AS hugo_build_base
 # FROM alpine:${ALPINE_OCI_IMAGE_TAG} AS hugo_build
 
 ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-'latest'}
@@ -37,6 +37,9 @@ RUN chmod +x ./heroku.alpine.hugo-extended.setup.sh && ./heroku.alpine.hugo-exte
 RUN echo "Is Hugo properly installed ?"
 RUN export PATH=$PATH:/usr/local/go/bin && hugo version && hugo env
 
+FROM hugo_build_base AS hugo_build
+# FROM alpine:${ALPINE_OCI_IMAGE_TAG} AS hugo_build
+
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # ---                  HUGO BUILD             --- #
 # ---         into [/usr/local/apache2/htdocs]            --- #
@@ -45,7 +48,7 @@ RUN export PATH=$PATH:/usr/local/go/bin && hugo version && hugo env
 RUN mkdir -p /pokus.io/hugo/src/
 COPY . /pokus.io/hugo/src/
 RUN ls -allh /pokus.io/hugo/src/
-RUN cd /pokus.io/hugo/src/ && hugo -b "${HUGO_BASE_URL}"
+RUN export PATH=$PATH:/usr/local/go/bin && cd /pokus.io/hugo/src/ && hugo -b "${HUGO_BASE_URL}"
 
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
