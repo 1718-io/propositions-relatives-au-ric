@@ -6,7 +6,7 @@
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 
-ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-'3.12'}
+ARG ALPINE_OCI_IMAGE_TAG=${ALPINE_OCI_IMAGE_TAG:-''}
 ARG GOLANG_VERSION=${GOLANG_VERSION:-'1.15.6'}
 # ARG GOL_IMAGE_TAG="${GOLANG_VERSION}-alpine${ALPINE_OCI_IMAGE_TAG}"
 FROM golang:$GOLANG_VERSION-alpine$ALPINE_OCI_IMAGE_TAG AS hugo_build
@@ -50,7 +50,7 @@ RUN cd /pokus.io/hugo/src/ && hugo -b "${HUGO_BASE_URL}"
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
-# ---               PUBLISHED CONTAIENR IMAGE             --- #
+# ---               PUBLISHED CONTAINER IMAGE             --- #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
 # +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ +++ #

@@ -76,8 +76,23 @@ cd ~/propositions-relatives-au-ric
 
 export FEATURE_ALIAS="heroku-pipeline"
 git checkout "feature/${FEATURE_ALIAS}"
-docker-compose build
+export DOCKER_BUILDKIT=0
+export COMPOSE_DOCKER_CLI_BUILD=0 && docker-compose build
+export DOCKER_BUILDKIT=1
+export COMPOSE_DOCKER_CLI_BUILD=1 && docker-compose build
 
+export D_BUILD_ARGS="--build-arg HTTPD_OCI_IMAGE_TAG=\"2.4\" "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg GOLANG_VERSION=\"1.15.6\" "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_VERSION=\"0.78.2\" "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_BASE_URL=\"https://ric-carl.herokuapp.com/\" "
 
-# docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric 
+export D_BUILD_ARGS="--build-arg HTTPD_OCI_IMAGE_TAG=2.4 "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg GOLANG_VERSION=1.15.6 "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_VERSION=0.78.2 "
+export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_BASE_URL=https://ric-carl.herokuapp.com/"
+
+# DOCKER_BUILDKIT=0 docker build -f heroku.Dockerfile . -t quay.io/ric1718/une_proposition:dev
+# DOCKER_BUILDKIT=0 docker build ${D_BUILD_ARGS} -f heroku.Dockerfile . -t quay.io/ric1718/une_proposition:dev
+
+# docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric
 ```
