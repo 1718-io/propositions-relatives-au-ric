@@ -108,3 +108,15 @@ unset GO_CPU_ARCH
 export PATH=$PATH:/usr/local/go/bin
 go version
 ```
+
+
+### CORS configuration of the http server
+
+The Apache 2 HTTP Server "`httpd`" is used to deploy the website to Heroku. An `httpd.conf` configuration file was added to configure CORS to allow all origins :
+
+```ini
+#
+# Apparemment, d'après [https://enable-cors.org/server_apache.html] :
+#
+Header set Access-Control-Allow-Origin "*"
+```
