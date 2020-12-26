@@ -84,11 +84,12 @@ jobs:
             export HEROKU_API_KEY=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             heroku auth:whoami
       - run:
-          name: "Initializing Heroku Git repo"
+          name: "Initializing Heroku Git repo and Set Heroku Stack"
           command: |
             echo "Initializing Heroku Git repo"
             export HEROKU_API_KEY=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             heroku git:remote -a $HEROKU_APP_ID
+            heroku stack:set container --app $HEROKU_APP_ID
       - run:
           name: "Deploy to Heroku via Git, website at https://ric-carl.herokuapp.com/ "
           command: |
