@@ -15,7 +15,7 @@ echo "Beware : you will see the service token only once, then you will not ever 
 # --- #
 # and give the service accoutn access to all directories and secrets in the given repo, with the option :
 # --- #
-# finally, in Circle CI, you created a 'riccarl-cicd' context in the [https://github.com/1718-io/propositions-relatives-au-ric] Github Repo
+# finally, in Circle CI, you created a 'riccarl-cicd' context in the [https://github.com/1718-io] Github Org
 # and in that 'riccarl-cicd' Circle CI context, you set the 'SECRETHUB_CREDENTIAL' env. var. with
 # value the token of the service account you just created
 
