@@ -122,7 +122,7 @@ workflows:
       - deploy_to_heroku:
           context: riccarl-cicd
           requires:
-            - build_and_publish
+            - container_images_publish
           filters:
             branches:
               ignore:
