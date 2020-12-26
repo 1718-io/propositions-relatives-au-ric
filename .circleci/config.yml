@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   secrethub_org:
     type: string
-    default: "gravitee-lab"
+    default: "ric1718"
     description: "SecretHub Org to use to fetch secrets ?"
   secrethub_repo:
     type: string
