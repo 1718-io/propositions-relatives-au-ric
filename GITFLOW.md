@@ -77,7 +77,7 @@ cd ~/propositions-relatives-au-ric
 export FEATURE_ALIAS="heroku-pipeline"
 git checkout "feature/${FEATURE_ALIAS}"
 docker-compose build
-docker-compose up -d
+docker-compose up -d hugo_dev
 
 export DOCKER_BUILDKIT=0
 export COMPOSE_DOCKER_CLI_BUILD=0 && docker-compose build

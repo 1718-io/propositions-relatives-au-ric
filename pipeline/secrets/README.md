@@ -18,7 +18,7 @@ secrethub mkdir --parents "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/"
 # --- #
 # write quay secrets for the DEV CI CD WorkFlow of
 # the Gravitee CI CD Orchestrator
-export HEROKU_USERNAME="ric1718+carl"
+export HEROKU_USERNAME="jean.baptiste.lasselle@gmail.com"
 export HEROKU_API_TOKEN="inyourdreams;)"
 
 echo "${HEROKU_USERNAME}" | secrethub write "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/user-name"

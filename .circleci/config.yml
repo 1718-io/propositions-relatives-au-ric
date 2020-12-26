@@ -31,6 +31,7 @@ jobs:
             echo "Checking Circle CI Job env. variables"
             echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
             echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
+            docker-compose build --env-file 
           name: "Container images build: Hugo Build (checking no hugo build error occurs)"
       - run:
           command: |
