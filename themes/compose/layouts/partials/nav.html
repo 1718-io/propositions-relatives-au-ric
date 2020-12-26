@@ -3,8 +3,8 @@
 <nav class="wrap nav menu">
 	<a href="{{ $s.BaseURL }}" class="nav_brand">
 		{{- $logos := $sp.logo }}
-		{{- $litPath := absURL (printf "images/%s" $logos.lightMode) }}
-		{{- $darkPath := absURL (printf "images/%s" $logos.darkMode) }}
+		{{- $litPath := absURL (printf "/images/%s" $logos.lightMode) }}
+		{{- $darkPath := absURL (printf "/images/%s" $logos.darkMode) }}
 		<picture data-lit="{{ $litPath }}" data-dark="{{ $darkPath }}">
 			{{ with $sp.enableDarkMode }}
 			<source srcset = '{{ $darkPath }}' media="(prefers-color-scheme: dark)">
