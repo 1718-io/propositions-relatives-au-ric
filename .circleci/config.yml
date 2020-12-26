@@ -81,7 +81,7 @@ jobs:
           name: "Heroku Check Authentication:"
           command: |
             echo "Checking Heroku Authentication is successful, with the secrethub provided Heroku API Token"
-            export HEROKU_API_TOKEN=$(secrethub write "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
+            export HEROKU_API_TOKEN=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             heroku auth:whoami
       - run:
           name: "Deploy to Heroku via Git, website at https://ric-carl.herokuapp.com/ "
@@ -91,7 +91,7 @@ jobs:
             echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
             echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
             echo "HEROKU_APP_ID=[${HEROKU_APP_ID}]"
-            export HEROKU_API_TOKEN=$(secrethub write "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
+            export HEROKU_API_TOKEN=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             export REPO_HEROKU=https://heroku:${HEROKU_API_TOKEN}@git.heroku.com/${HEROKU_APP_ID}.git
             git remote add heroku ${REPO_HEROKU}
             git push -u heroku master && git push -u heroku --tags
