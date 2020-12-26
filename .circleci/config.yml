@@ -102,7 +102,8 @@ jobs:
             export REPO_HEROKU=https://heroku:${HEROKU_API_KEY}@git.heroku.com/${HEROKU_APP_ID}.git
             git remote remove heroku
             git remote add heroku ${REPO_HEROKU}
-            git push -u heroku master && git push -u heroku --tags
+            git push -u heroku master:main
+            # && git push -u heroku --tags
             echo "Run this to see the logs of the Heroku deployment: "
             echo "heroku logs --tail --app ${HEROKU_APP_ID}"
 workflows:
