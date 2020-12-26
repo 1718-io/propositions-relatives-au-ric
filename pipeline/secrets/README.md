@@ -1,9 +1,4 @@
-
-### Circle CI Org security for Orbs
-
-You must authorize non-certified Circle CI Orbs for the Circle CI Organization, to use uncertifed Orbs (like the secrethub one) :
-
-![authorize non-certified Circle CI Orbs](./images/circleci-uncertified-orbs.786Z.png)
+# CI CD Pipeline Secrets
 
 ### Circle CI Org context
 
