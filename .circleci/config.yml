@@ -43,7 +43,7 @@ jobs:
                     echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
                     echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
                     QUAY_BOT_USERNAME=$(secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/oci/quay-io/user-name)
-                    QUAY_BOT_SECRET=$(secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/oci/quay-io/api-token)
+                    QUAY_BOT_SECRET=$(secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/oci/quay-io/user-pwd)
                     echo "QUAY_BOT_USERNAME=[${QUAY_BOT_USERNAME}]"
                     # echo "QUAY_BOT_SECRET=[${QUAY_BOT_SECRET}]"
                     docker login -u="${QUAY_BOT_USERNAME}" -p="${QUAY_BOT_SECRET}" quay.io
