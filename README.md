@@ -76,7 +76,7 @@ go install --tags extended
 ```bash
 # Choose the version of golang you want at [https://github.com/golang/go/releases]
 export GOVERSION=1.15.6
-export GOOS=linux-amd64
+export GOOS=linux
 export GO_CPU_ARCH=amd64
 
 export DWLD_URI=https://golang.org/dl/go${GOVERSION}.${GOOS}-${GO_CPU_ARCH}.tar.gz
@@ -107,4 +107,34 @@ unset GO_CPU_ARCH
 
 export PATH=$PATH:/usr/local/go/bin
 go version
+```
+
+
+### CORS configuration of the http server
+
+The Apache 2 HTTP Server "`httpd`" is used to deploy the website to Heroku. An `httpd.conf` configuration file was added to configure CORS to allow all origins :
+
+```ini
+#
+# Apparemment, d'après [https://enable-cors.org/server_apache.html] :
+#
+Header set Access-Control-Allow-Origin "*"
+```
+
+### Docker images and the GIT COMMIT ID
+
+* to retrievethe GIT COMMIT ID fromthe docker image : ccc
+* and to find the same commit ona git repo :
+
+```bash
+# ---
+#
+git log --abbrev-commit --pretty=oneline
+# ---
+# And from the graph displayed here :
+git log --graph --abbrev-commit --decorate --date=relative  --format=format:'%C(bold red)%h%C(reset)%C(bold green)%d%C(reset) %C(bold blue)%ai %C(reset) %C(yellow)%ar%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+# ---
+# also
+git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
