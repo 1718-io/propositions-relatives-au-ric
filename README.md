@@ -128,9 +128,13 @@ Header set Access-Control-Allow-Origin "*"
 
 ```bash
 # ---
-# 
+#
 git log --abbrev-commit --pretty=oneline
 # ---
 # And from the graph displayed here :
 git log --graph --abbrev-commit --decorate --date=relative  --format=format:'%C(bold red)%h%C(reset)%C(bold green)%d%C(reset) %C(bold blue)%ai %C(reset) %C(yellow)%ar%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+# ---
+# also
+git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
