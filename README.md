@@ -120,3 +120,17 @@ The Apache 2 HTTP Server "`httpd`" is used to deploy the website to Heroku. An `
 #
 Header set Access-Control-Allow-Origin "*"
 ```
+
+### Docker images and the GIT COMMIT ID
+
+* to retrievethe GIT COMMIT ID fromthe docker image : ccc
+* and to find the same commit ona git repo :
+
+```bash
+# ---
+# 
+git log --abbrev-commit --pretty=oneline
+# ---
+# And from the graph displayed here :
+git log --graph --abbrev-commit --decorate --date=relative  --format=format:'%C(bold red)%h%C(reset)%C(bold green)%d%C(reset) %C(bold blue)%ai %C(reset) %C(yellow)%ar%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+```
