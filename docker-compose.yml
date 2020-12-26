@@ -3,7 +3,7 @@ version: "3.7"
 services:
   hugo_dev:
     # we need extended, and nodejs for sass!
-    image: quay.io/ric1718/une_proposition:dev
+    image: quay.io/ric1718/une_proposition:${QUAY_OCI_IMAGE_TAG}
     container_name: hugo_heroku
     build:
        context: .
