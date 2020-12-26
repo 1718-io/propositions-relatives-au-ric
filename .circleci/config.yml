@@ -99,7 +99,8 @@ jobs:
             echo "HEROKU_APP_ID=[${HEROKU_APP_ID}]"
             export HEROKU_API_KEY=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             export REPO_HEROKU=https://heroku:${HEROKU_API_KEY}@git.heroku.com/${HEROKU_APP_ID}.git
-            # git remote add heroku ${REPO_HEROKU}
+            git remote remove heroku
+            git remote add heroku ${REPO_HEROKU}
             git push -u heroku master && git push -u heroku --tags
             echo "Run this to see the logs of the Heroku deployment: "
             echo "heroku logs --tail --app ${HEROKU_APP_ID}"
