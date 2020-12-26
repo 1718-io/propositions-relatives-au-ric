@@ -1,5 +1,9 @@
 
-### Circle CI
+### Circle CI Org security for Orbs
+
+You must authorize non-certified Circle CI Orbs for the Circle CI Organization, to use uncertifed Orbs, like the secrethub one.
+
+### Circle CI Org context
 
 ```bash
 export SECRETHUB_ORG="ric1718"
