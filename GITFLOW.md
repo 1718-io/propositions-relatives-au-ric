@@ -76,6 +76,7 @@ cd ~/propositions-relatives-au-ric
 
 export FEATURE_ALIAS="heroku-pipeline"
 git checkout "feature/${FEATURE_ALIAS}"
+export GIT_COMMIT_ID=$(git rev-parse --short HEAD)
 docker-compose build hugo_dev
 export QUAY_OCI_IMAGE_TAG=0.0.1-heroku
 docker-compose build hugo_heroku

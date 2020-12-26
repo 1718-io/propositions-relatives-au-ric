@@ -28,16 +28,33 @@ jobs:
       - docker/install-docker-compose
       - run:
           command: |
-            echo "Checking Circle CI Job env. variables"
-            echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
-            echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
-            docker-compose build --env-file 
+                    echo "Checking Circle CI Job env. variables"
+                    echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
+                    echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
+                    export GIT_RELEASE_TAG=$(git describe --tags --abbrev=0)
+                    export QUAY_OCI_IMAGE_TAG=${GIT_RELEASE_TAG}-heroku
+                    echo "QUAY_OCI_IMAGE_TAG=[${QUAY_OCI_IMAGE_TAG}]"
+                    export GIT_COMMIT_ID=$(git rev-parse --short HEAD)
+                    docker-compose build hugo_heroku
           name: "Container images build: Hugo Build (checking no hugo build error occurs)"
       - run:
           command: |
-            echo "Checking Circle CI Job env. variables"
-            echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
-            echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
+                    echo "Checking Circle CI Job env. variables"
+                    echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
+                    echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
+                    QUAY_BOT_USERNAME=$(secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/oci/quay-io/user-name)
+                    QUAY_BOT_SECRET=$(secrethub read ${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/oci/quay-io/api-token)
+                    echo "QUAY_BOT_USERNAME=[${QUAY_BOT_USERNAME}]"
+                    # echo "QUAY_BOT_SECRET=[${QUAY_BOT_SECRET}]"
+                    docker login -u="${QUAY_BOT_USERNAME}" -p="${QUAY_BOT_SECRET}" quay.io
+                    export GIT_RELEASE_TAG=$(git describe --tags --abbrev=0)
+                    export QUAY_OCI_IMAGE_TAG=${GIT_RELEASE_TAG}-heroku
+                    docker tag "quay.io/ric1718/une_proposition:${QUAY_OCI_IMAGE_TAG}" "quay.io/ric1718/une_proposition:stable-latest"
+                    echo "checking [date time] (sometimes data time in Circle CI pipelines is wrong, so that Container registry rejects the [docker push]...)"
+                    echo "date time in Circle CI Pipeline is [$(date)] "
+                    date
+                    docker push "quay.io/ric1718/une_proposition:${QUAY_OCI_IMAGE_TAG}"
+                    docker push "quay.io/ric1718/une_proposition:stable-latest"
           name: "Container images publish to quay.io"
 
   deploy_to_heroku:
@@ -77,7 +94,7 @@ jobs:
             export HEROKU_API_TOKEN=$(secrethub write "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             export REPO_HEROKU=https://heroku:${HEROKU_API_TOKEN}@git.heroku.com/${HEROKU_APP_ID}.git
             git remote add heroku ${REPO_HEROKU}
-            git push -u heroku master
+            git push -u heroku master && git push -u heroku --tags
             echo "Run this to see the logs of the Heroku deployment: "
             echo "heroku logs --tail --app ${HEROKU_APP_ID}"
 workflows:
@@ -86,7 +103,39 @@ workflows:
     jobs:
       - container_images_publish:
           context: riccarl-cicd
+          filters:
+            branches:
+              ignore:
+                - master
+                - develop
+                - /^feature*/
+                - /^support*/
+                - /^bugfix*/
+                - /^hotfix*/
+                - /^release*/
+            tags:
+              # only: /^v.*/
+              only:
+                - /^[0-999].[0-999].[0-999]/
+                - /^[0-999].[0-999].[0-999]-alpha/
+                - /^[0-999].[0-999].[0-999]-beta/
       - deploy_to_heroku:
           context: riccarl-cicd
           requires:
             - build_and_publish
+          filters:
+            branches:
+              ignore:
+                - master
+                - develop
+                - /^feature*/
+                - /^support*/
+                - /^bugfix*/
+                - /^hotfix*/
+                - /^releases*/
+            tags:
+              # only: /^v.*/
+              only:
+                - /^[0-999].[0-999].[0-999]/
+                - /^[0-999].[0-999].[0-999]-alpha/
+                - /^[0-999].[0-999].[0-999]-beta/
