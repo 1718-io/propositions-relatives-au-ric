@@ -47,6 +47,7 @@ FROM hugo_build_base AS hugo_build
 
 RUN mkdir -p /pokus.io/hugo/src/
 COPY . /pokus.io/hugo/src/
+COPY .git /pokus.io/hugo/src/
 RUN ls -allh /pokus.io/hugo/src/
 RUN export PATH=$PATH:/usr/local/go/bin && cd /pokus.io/hugo/src/ && hugo -b "${HUGO_BASE_URL}"
 
