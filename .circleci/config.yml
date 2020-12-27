@@ -70,17 +70,14 @@ jobs:
       - secrethub/install
       - heroku/install
       - run:
+          name: "Heroku Check Authentication"
           command: |
+            echo "Checking Heroku Authentication is successful, with the secrethub provided Heroku API Token"
             echo "Checking context variables from [riccarl-cicd] context"
             echo "Checking Circle CI Job env. variables"
             echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
             echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
             echo "HEROKU_APP_ID=[${HEROKU_APP_ID}]"
-          name: "Deploy to heroku as https://ric-carl.herokuapp.com/ "
-      - run:
-          name: "Heroku Check Authentication"
-          command: |
-            echo "Checking Heroku Authentication is successful, with the secrethub provided Heroku API Token"
             # that's just to check how to
             export HEROKU_API_KEY=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             heroku auth:whoami
