@@ -71,8 +71,8 @@ hugo serve --watch -b http://127.0.0.1:1313/
 
 
 ```bash
-git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric
-cd ~/propositions-relatives-au-ric
+git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric-test
+cd ~/propositions-relatives-au-ric-test
 
 export FEATURE_ALIAS="heroku-pipeline"
 git checkout "feature/${FEATURE_ALIAS}"
@@ -102,4 +102,16 @@ export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_BASE_URL=https://ric-carl.
 # DOCKER_BUILDKIT=0 docker build ${D_BUILD_ARGS} -f heroku.Dockerfile . -t quay.io/ric1718/une_proposition:dev
 
 # docker-compose down --rmi all && docker system prune -f --all && cd && rm -fr ~/propositions-relatives-au-ric
+```
+
+* ccc :
+
+```bash
+export DESIRED_VERISON=0.0.2
+rm -fr ~/propositions-relatives-au-ric-test
+git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric-test
+cd ~/propositions-relatives-au-ric-test
+git checkout "${DESIRED_VERISON}"
+
+
 ```
