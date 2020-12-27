@@ -70,17 +70,14 @@ jobs:
       - secrethub/install
       - heroku/install
       - run:
+          name: "Heroku Check Authentication"
           command: |
+            echo "Checking Heroku Authentication is successful, with the secrethub provided Heroku API Token"
             echo "Checking context variables from [riccarl-cicd] context"
             echo "Checking Circle CI Job env. variables"
             echo "SECRETHUB_ORG=[${SECRETHUB_ORG}]"
             echo "SECRETHUB_REPO=[${SECRETHUB_REPO}]"
             echo "HEROKU_APP_ID=[${HEROKU_APP_ID}]"
-          name: "Deploy to heroku as https://ric-carl.herokuapp.com/ "
-      - run:
-          name: "Heroku Check Authentication"
-          command: |
-            echo "Checking Heroku Authentication is successful, with the secrethub provided Heroku API Token"
             # that's just to check how to
             export HEROKU_API_KEY=$(secrethub read "${SECRETHUB_ORG}/${SECRETHUB_REPO}/carlbot/heroku/api-token")
             heroku auth:whoami
@@ -104,7 +101,6 @@ jobs:
             export QUAY_OCI_IMAGE_TAG=${GIT_RELEASE_TAG}-heroku
             echo "QUAY_OCI_IMAGE_TAG=[${QUAY_OCI_IMAGE_TAG}]"
             export GIT_COMMIT_ID=$(git rev-parse --short HEAD)
-            export QUAY_OCI_IMAGE_TAG=0.0.1-heroku
             docker-compose build hugo_heroku
             # and now [quay.io/ric1718/une_proposition:${QUAY_OCI_IMAGE_TAG}] should exists among [docker images]
           name: "Container images build for the Heroku Deployment: Hugo Build (checking no hugo build error occurs)"
