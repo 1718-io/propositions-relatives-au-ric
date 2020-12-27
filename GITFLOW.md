@@ -107,11 +107,16 @@ export D_BUILD_ARGS="${D_BUILD_ARGS} --build-arg HUGO_BASE_URL=https://ric-carl.
 * ccc :
 
 ```bash
-export DESIRED_VERISON=0.0.2
+export DESIRED_VERSION=0.0.2
+export DESIRED_VERSION=master
+
 rm -fr ~/propositions-relatives-au-ric-test
 git clone git@github.com:1718-io/propositions-relatives-au-ric.git ~/propositions-relatives-au-ric-test
 cd ~/propositions-relatives-au-ric-test
-git checkout "${DESIRED_VERISON}"
+git checkout "${DESIRED_VERSION}"
 
+source .heroku.env
+export QUAY_OCI_IMAGE_TAG=0.0.1-heroku
+docker-compose build hugo_heroku
 
 ```
