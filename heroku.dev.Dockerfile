@@ -108,6 +108,8 @@ RUN rm -fr /usr/local/apache2/htdocs
 RUN mkdir -p /usr/local/apache2/htdocs
 RUN mkdir -p /pokus.io/retrieved_hugo_build
 COPY --from=hugo_build /pokus.io/hugo/src/public /pokus.io/retrieved_hugo_build
+RUN echo "Right after retrieveing the result of the hugo build , content of  [/pokus.io/retrieved_hugo_build] : "
+RUN ls -allh /pokus.io/retrieved_hugo_build
 #   fRench do it, Let(')s do it, Let's...
 RUN cp -fR /pokus.io/retrieved_hugo_build/* /usr/local/apache2/htdocs
 
