@@ -12,9 +12,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
+    name = "Avant Propos"
+    weight = 2
+    url = "/docs/avant-propos/"
+
+[[menu.main]]
     name = "La Proposition"
     weight = 2
-    url = "/docs/"
+    url = "/docs/ric-interne/"
 
 [[menu.main]]
     name = "Les Objections"

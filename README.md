@@ -2,8 +2,18 @@
 
 ## Dev environment
 
+To work on this project, you will need on your machine, to have intalled :
+
+* git and the git flow AVH edition
+* Golang version `1.15.6`
+* hugo "extended", version `0.78.2`
+
+Below you will find recipes to install Golang and hugo "extended" on a GNU/Linux machine.
+
+
 ### Debian and GNU / Linux
 
+#### Basic workflow
 
 ```bash
 # ---- ----------- ---- #
@@ -123,8 +133,8 @@ Header set Access-Control-Allow-Origin "*"
 
 ### Docker images and the GIT COMMIT ID
 
-* to retrievethe GIT COMMIT ID fromthe docker image : ccc
-* and to find the same commit ona git repo :
+* To retrieve the GIT COMMIT ID from the latest docker image : `docker inspect --format '{{ index .Config.Labels "git.commit.id"}}' "quay.io/ric1718/une_proposition:stable-latest"`
+* And to find the same commit on a git repo :
 
 ```bash
 # ---

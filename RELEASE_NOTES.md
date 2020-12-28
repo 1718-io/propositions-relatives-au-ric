@@ -1,12 +1,14 @@
+# Containerization and CI CD
+
 ### What's in this release
 
-* A Docker-Compose which allows building locally the Docker image, and serving the website at a URL which can be configured with the `HUGO_BASE_URL` in the `.env` file.
-* The Circle CI Pipeline deploys the website to Heroku.
+* A Docker-Compose which allows building and running locally the Docker image, the localwebsite URL which can be configured with the `HUGO_BASE_URL` in the `.env` file.
+* The Circle CI Pipeline deploys the website to Heroku. The `.heroku.env` file configures the container image build, for the container image to be deployed to heroku.
 * The Circle CI Pipeline requires initializing secrets into secrethub, as documented in https://github.com/1718-io/propositions-relatives-au-ric/tree/0.0.2/pipeline/secrets
 
 ### How to's
 
-* to deploy a new version of the website, jsut make a git flow release, using pure semver, and the Circle CI Pipelien will process the deployment
+* To deploy a new version of the website, jsut make a git flow release, using pure semver, and the Circle CI Pipelien will process the deployment
 
 * In this version, the full example content is ready to serve with the hugo dev server, like this :
 
