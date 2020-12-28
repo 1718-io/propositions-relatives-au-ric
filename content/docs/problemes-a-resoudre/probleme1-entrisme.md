@@ -46,7 +46,7 @@ Pour rendre impossible à retirer des statuts, un ou plusieurs articles, il suff
 
 Ainsi, le problème de l'entrisme, est réglé : l'unanimité étant exigée, le nombre de membres "envoyés pour tout détruire", aussi grand soit-il, ne rend plus possible la suppression des status du __RIC__ en interne, ou de l'objectif prinicpal, original, qui fait la raison d'être, l'âme de l'organisation, l'instauration du __RIC__ en Fance.
 
-Cette idée, cette "technique", je l'ai parfaitement comprise, une fois expliquée par François Asselineau, del'UPR, homme pour lequel je ne voterai jamais, en raison du projet de son parti politique, des méthodes dont il fait usage, et dautres chsoes encore. Je lecite cependant, simplement par honnêteté intellecturelle : c'est bien lui qui m'a parfaitement fait comprendre cette technique.
+Cette idée, cette "technique", je l'ai parfaitement comprise, une fois expliquée par François Asselineau, del'UPR, homme pour lequel je ne voterai jamais, en raison du projet de son parti politique, des méthodes dont il fait usage, et dautres chsoes encore. Je le cite cependant, simplement par honnêteté intellecturelle : c'est bien lui qui m'a parfaitement fait comprendre cette technique.
 
 
 ### Remarque finale
