@@ -17,18 +17,16 @@ On m'a répondu qu'il était juridiquement impossible de rendre immuable le __RI
 * Il suffit de faire un `RIC` en interne, pour supprimer l'article 2
 * et l'article 1 pourrait être modifiable/supprimable, pusque plsu supprimé par l'article 2.
 
+Suite à cette objection à ma première proposition, j'ai compris et reonnu le fait que ma proposition était inopérante.
 
 ### Discussion du problème
 
-Suite à cette objection à ma première propositio, j'ai compris et reonnu le fait que maproposition était inopérante.
+Il ne s'agissait que d'une première proposition, sans être juriste de métier, ni avoir passé beaucoup de temps à réfléchir à la question.
 
-Il ne s'agissait que d'une première proposition, sans être juriste de métier, ni avoir passé beaucp de temsp à réfléchir à la question.
-
-J'ai tout de même imédiatement objectéla chose suivante :
+J'ai tout de même imédiatement objecté la chose suivante :
 
 >
-> Très bien, mais si vosu dîtes qu'ilest juridiquement immpossible de rendre le `RIC` immuables dans des status d'organisation, comment pouvez-vous prétendre qu'il soit juridiquement possible de le rendre immuable dans la constitution Française
-Je vais donner une solution
+> Très bien, mais si vosu dîtes qu'ilest juridiquement immpossible de rendre le `RIC` immuables dans des status d'organisation, comment pouvez-vous prétendre qu'il soit juridiquement possible de le rendre immuable dans la constitution Française ?
 >
 
 L'on m'a répondu que le ["problème de l'entrisme"](/docs/problemes-a-resoudre/probleme1-entrisme/) ne se pose pas au niveau du Pays, car :
