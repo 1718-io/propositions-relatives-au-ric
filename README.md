@@ -2,8 +2,18 @@
 
 ## Dev environment
 
+To work on this project, you will need on your machine, to have intalled :
+
+* git and the git flow AVH edition
+* Golang version `1.15.6`
+* hugo "extended", version `0.78.2`
+
+Below you will find recipes to install Golang and hugo "extended" on a GNU/Linux machine.
+
+
 ### Debian and GNU / Linux
 
+#### Basic workflow
 
 ```bash
 # ---- ----------- ---- #

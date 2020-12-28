@@ -3,6 +3,9 @@ title: "Sommaire"
 weight: 1
 ---
 
+# Sommaire
+
+
 These docs consists of two parts:
 
 1. Hugo Compose Themes docs ccc
