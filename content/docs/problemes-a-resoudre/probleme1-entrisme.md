@@ -42,7 +42,7 @@ Le problème est résolu par l'inscription dans les statuts de notre organisatio
 
 L'idée utilisée pour les articles `3`, `4`, `5` et `6`, m'a été inspirée par notre très chère Europe, et est la suivante :
 
-Pour rendre impossible à retirer des statuts, un ou plusieurs articles, il suffit d'exiger que toute modification de cet article, nesoit possible que parun vote à l'unamité absolue, de tous les membres de l'organsiation.
+Pour rendre impossible à retirer des statuts, un ou plusieurs articles, il suffit d'exiger que toute modification de cet article, ne soit possible que par un vote à l'unamité absolue, de tous les membres de l'organsiation.
 
 Ainsi, le problème de l'entrisme, est réglé : l'unanimité étant exigée, le nombre de membres "envoyés pour tout détruire", aussi grand soit-il, ne rend plus possible la suppression des status du __RIC__ en interne, ou de l'objectif prinicpal, original, qui fait la raison d'être, l'âme de l'organisation, l'instauration du __RIC__ en Fance.
 
