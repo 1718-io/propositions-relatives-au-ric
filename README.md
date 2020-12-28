@@ -1,4 +1,4 @@
-# Quelques porpositions quant au RIC
+# Quelques propositions quant au RIC
 
 ## Dev environment
 
