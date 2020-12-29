@@ -1,6 +1,6 @@
 ---
-title: "Le problème de l'Entrisme"
-weight: 22
+title: "Le problème de l'Entrisme et élections"
+weight: 24
 description: >
   This page tells you how to get started with the Compose theme, including installation and basic configuration.
 ---
