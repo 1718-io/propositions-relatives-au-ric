@@ -18,7 +18,7 @@ Tout manquement à cet article entraîne, pour le membre ayant manqué au respec
 >
 > (À reporter / rédiger dans [cette page](/docs/problemes-a-resoudre/))
 >
-> Cet article aété ajouté, suite à l'objection suivante formulée par "Philipe PP"
+> Cet article aété ajouté, suite à l'objection suivante formulée par "quelqu'un qui ne souhaite pas être cité, qui a émis cette objection sur le Discord MCP"
 >
 > Motivation de la création de cet article : Un groupe de 3000 personnes venant de laFrance Insoumise, pourrait faire, par RIC interne, adopter la décision que notre organisation soutienne la candidature aux élections de l'un de ses candidats
 >
