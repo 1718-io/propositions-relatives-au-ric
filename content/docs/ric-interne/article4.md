@@ -1,6 +1,6 @@
 ---
 title: "Article 4 : Objectif prinicpal de l'organisation, immuabilité"
-weight: 23
+weight: 25
 description: >
   This page tells you how to get started with the Compose theme, including installation and basic configuration.
 ---

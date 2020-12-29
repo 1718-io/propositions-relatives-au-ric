@@ -1,6 +1,6 @@
 ---
 title: "Article 5 : Omni-présence du RIC dans la communication "
-weight: 23
+weight: 26
 description: >
   This page tells you how to get started with the Compose theme, including installation and basic configuration.
 ---
