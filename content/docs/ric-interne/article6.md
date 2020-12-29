@@ -1,6 +1,6 @@
 ---
 title: "Article 6 : Contrôle de la communication, immuabilité"
-weight: 23
+weight: 27
 description: >
   This page tells you how to get started with the Compose theme, including installation and basic configuration.
 ---
