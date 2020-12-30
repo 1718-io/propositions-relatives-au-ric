@@ -10,4 +10,6 @@ Pour chacune d'entre elles, je vais :
 * énoncer les solutions que j'ai trouvées pour résoudre la problématique (ou lever l'objection)
 * et expliquer quelle solution j'ai choisie, et pourquoi elle parmi celles possibles.
 
-{{< button "/docs/probleme1-entrisme" "Première Objection / Premier problème" >}}
+---
+
+{{< button "/docs/problemes-a-resoudre/probleme1-entrisme/" "Première Objection / Premier problème" >}}
