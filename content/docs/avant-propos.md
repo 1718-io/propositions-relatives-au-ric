@@ -12,21 +12,21 @@ Avec ces 3 convictions que j'ai décrites ci-dessus, j'ai recherché toutes les 
 
 J'ai trouvé jusqu'à aujourd'hui une seule organisation prétendant réunir les français autour de la seule revendication du __RIC__, [le `MCP`](https://mouvement-constituant-populaire.fr/2020/videos/pourquoi-le-ric-constituant/)
 
-Le `MCP` a aussi attiré mon attention plus que d'autres, pour une raison: il se trouve qu'[__Etienne Chouard, soutien publiquement l'initiative du MCP__](https://mouvement-constituant-populaire.fr/2020/videos/pourquoi-le-ric-constituant/). Hors pour moi, Etienne Chouard est un penseur majeur, quant à l'idée, et aux idées/pensées entourant le concept de RIC. Et un penseur majeur de notre Siècle (le 21 ième), de la pensée politique, de la pensée philosophique. C'està dire de la pensée qui coûte à un hommme, de la pensée qui est une question de survie, à un homme, comme à l'Homme.
+Le `MCP` a aussi attiré mon attention plus que d'autres, pour une raison: il se trouve qu'[__Etienne Chouard, soutien publiquement l'initiative du MCP__](https://mouvement-constituant-populaire.fr/2020/videos/pourquoi-le-ric-constituant/). Hors pour moi, Etienne Chouard est un penseur majeur, quant à l'idée, et aux idées/pensées entourant le concept de RIC. Et un penseur majeur de notre Siècle (le 21 ième), de la pensée politique, de la pensée philosophique. C'est à dire de la pensée qui coûte à un hommme, de la pensée qui est une question de survie, à un homme, comme à l'Homme.
 
-J'ai discuté et débattu avec des nombreuses personnes, de passage dans les débats ouverts au sein du MCP, et avec un membre de la vingtaines de "fondateurs" du MCP, sur une proposition simple que j'ai faite :
+J'ai discuté et débattu avec des nombreuses personnes, de passage dans les débats ouverts au sein du MCP, et avec un membre de la vingtaine de "fondateurs" du MCP, sur une proposition simple que j'ai faite :
 
 >
 > Pour proposer au Français de mettre en oeuvre le RIC pour tous les Français, le MCP doit d'abord montrer que cela est possible en le mettant en oeuvre lui-même comme démocratie interne.
 >
-> Cela permettrait de démontrer aux Français que la mise ne oeuvre du RIC est possible, et efficiente, opérationelleent
+> Cela permettrait de démontrer aux Français que la mise ne oeuvre du RIC est possible, et efficiente, opérationellement
 >
 > Cela permettrait de garantir aux membres du MCP qu'ils gardent le contrôlent sur le MCP, commele RIC permettrait aux Citoyen de garder le contrôle sur les représentants qu'ils ont élu.
 >
 
 Une fois cette proposition faite :
 
-Les débats ont été intéressants, enflammés, parfois tendus, les réactions fortes. J'ai pu constater que de nombreux autres Français, que je ne connaissait pas, soutenaient cette proposition, aussitôt entendue. J'ai aussi pu constater que nombre des membres "ayant des responsabilités" au sein du MCP rejttent tout simplement la proposition, sans argument, me soupçonnant de toute évidence d'intention cachées et/ou hostiles.
+Les débats ont été intéressants, enflammés, parfois tendus, les réactions fortes. J'ai pu constater que de nombreux autres Français, que je ne connaissais pas, soutenaient cette proposition, aussitôt entendue. J'ai aussi pu constater que nombre des membres "ayant des responsabilités" au sein du MCP rejettent tout simplement la proposition, sans argument, me soupçonnant de toute évidence d'intention cachées et/ou hostiles.
 
 
 Enfin, j'ai pu échanger avec un ou deux des "fondateurs" (disont, des "plus hauts placés, dans la hiérarchie de prise de décisions, au MCP"). Ceux ci m'ont opposés deux arguments :
@@ -48,7 +48,7 @@ Hormis les objections que j'ai ci-dessus citées, d'autres objections peuvent se
   * Pour ce faire, il vous faut créer votre compte sur https://github.com
   * Pour créer votre compte sur https://github.com , sur la page https://github.com, cliquez, en haut à droite sur le lien "**Sign up**"
   * Voici une vidéo où vous pourrez voir un francophone créant un compte Github.com : https://www.youtube.com/watch?v=UShoAaZihRU
-  * Pour la création de votre compte Github, n'oubliez pas une étape importante : vous recevrez un eamil, dans lequel vous devrez cliquer sur un lie , pour "confirmer la création de votre compte".
+  * Pour la création de votre compte Github, n'oubliez pas une étape importante : vous recevrez un eamil, dans lequel vous devrez cliquer sur un lien , pour "confirmer la création de votre compte".
   * Enfin, pour "ouvrir" une issue afin de me faire part d'une objection, d'une remarque de votre part, cliquez sur le bouton vert "**New issue**" en haut à droite de la page : https://github.com/1718-io/propositions-relatives-au-ric/issues
   * Voici une vidéo Youtube dans laquelle vous pourrez voir une anglophone créer une issue (ne prenez pas attention à ce que cette personne dit) : https://www.youtube.com/watch?v=EQDU3hH9Vuc&t=210s
 

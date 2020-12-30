@@ -23,7 +23,7 @@ Il est ici décrit dans le cas de membres d'un parti politique, mais je l'ai ent
 
 Tout d'abord, je dirais deux choses :
 1. le principal objet originel de l'organisation, et c'est ce qu'il faut garder en tête, est l'instauration du __RIC__ en France.
-2. Tant que cet objectif de l'instauration du __RIC__ en France est obtenu, lefait que des personnes, quelques soent leur nombre, aient un pouvoir dans l'organisation, ne nous importe pas.
+2. Tant que cet objectif de l'instauration du __RIC__ en France est obtenu, le fait que des personnes, quelques soent leur nombre, aient un pouvoir dans l'organisation, ne nous importe pas.
 
 ### Analyse du problème
 
