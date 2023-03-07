@@ -1,16 +1,22 @@
 ---
-title: elements
+title: "Billet numéro 1"
+date: 2020-12-06T23:36:52+01:00
 ---
 
-## Table of contents
 
-- [Table of contents](#table-of-contents)
+
+## Sommaire 
+
+[Objet](#Objet)
 - [Text](#text)
 - [Code](#code)
   - [Python](#python)
   - [C/C++](#cc)
   - [Bash](#bash)
 - [Tables](#tables)
+
+
+## Objet
 
 ## Text
 
@@ -50,3 +56,27 @@ exit 0;
 | 1     | Text     |
 | 2     | Code     |
 | 3     | Tables   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- 
+
+
+### Définition de la procédure de RIC
+
+L'article Premier, l'article 2 et l'article 3 de ces statuts, ne peuvent se voir modifiés qu'à la condition que la(dite) ou les(dites) modifications, aient été votées à l'unanimité des membres de l'organisation, au cours de la tenue d'une assemblée extraordinaire, convoquée par RIC ou par .
+
