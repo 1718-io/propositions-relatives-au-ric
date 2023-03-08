@@ -1,6 +1,6 @@
 ---
-title: "Posts"
-description: "A collection of posts"
+title: "Pensées"
+description: "Un Bouquet de Pensées"
 icon: "flag"
 ---
 
