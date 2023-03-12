@@ -1,8 +1,7 @@
 ---
 title: "Billet numéro 1: Le Baptême de Tom Sawyer."
-date: 2020-12-06T23:36:52+01:00
+date: 2023-03-05T23:36:52+01:00
 ---
-
 
 
 ## Sommaire 
