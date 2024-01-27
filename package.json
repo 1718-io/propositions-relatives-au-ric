@@ -1,0 +1,25 @@
+{
+  "name": "@1718/propositions-relatives-au-ric",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "./.npm.scripts/clean.sh",
+    "build:prod:gh": "bash -c './.npm.scripts/prod/gh_pages/build.sh'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-Baptiste-Lasselle/whoami-web.git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jean-Baptiste-Lasselle/whoami-web.git/issues"
+  },
+  "homepage": "https://github.com/Jean-Baptiste-Lasselle/whoami-web.git/#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
